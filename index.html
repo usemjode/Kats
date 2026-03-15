@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kats</title>
+    <style>
+        /* Global Styles */
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding-top: 80px; 
+            font-family: Arial, sans-serif;
+            min-height: 150vh; 
+        }
+
+        /* Sticky Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+            border-bottom: 1px solid #444;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ffcc00;
+        }
+
+        /* Top Image Container */
+        .img-container {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .responsive-img {
+            width: 30%; /* Sized down to 30% */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Video and Feature Row Containers */
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 50px auto;
+            max-width: 1100px;
+            padding: 0 20px;
+        }
+
+        iframe {
+            border-radius: 12px;
+            border: 2px solid #333;
+            max-width: 100%;
+        }
+
+        .video-text {
+            flex: 1;
+            text-align: left;
+            min-width: 300px;
+        }
+
+        .video-text h2 {
+            margin-top: 0;
+            color: #ffcc00;
+        }
+
+        /* Side Image Styling */
+        .side-img {
+            width: 100%;
+            max-width: 560px;
+            border-radius: 12px;
+            border: 2px solid #333;
+        }
+
+        .image-box {
+            flex: 1;
+            min-width: 300px;
+            max-width: 560px;
+        }
+
+        /* Meta Button Styling */
+        .meta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .meta-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="tos.html">TOS</a>
+    </nav>
+
+    <div class="img-container">
+        <h1>Kats</h1>
+        <a href="https://www.google.com">
+            <img src="https://scontent-dfw5-1.oculuscdn.com/v/t64.5771-25/491830593_1393545132462643_4100289664480068116_n.webp?stp=dst-webp_s2048x2048&_nc_cat=110&ccb=1-7&_nc_sid=6e7a0a&_nc_ohc=OeiL8HxxOFUQ7kNvwGxsg3f&_nc_oc=AdkfvV9IGlbwMh-BpnVBEmu4RwCW6YXISmD4jMr8YAI07T-T7uIbZ7nxrCfqKDDj5so&_nc_zt=3&_nc_ht=scontent-dfw5-1.oculuscdn.com&_nc_ss=8&oh=00_AfwAdgpfe4sATwfdZisdIYRAwA1yCfRYxq9zyRp8pqb4HA&oe=69BCE9B9" 
+                 alt="Centered Kat Image" 
+                 class="responsive-img"
+                 style="width: 100%; height: auto;">
+                 
+        </a>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #333; width: 80%; margin: 40px auto;">
+
+    <div class="video-container">
+        <iframe width="560" height="315" 
+            src="https://www.youtube-nocookie.com/embed/6FT0zYT2pck" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+
+        <div class="video-text">
+            <h2>Trailer</h2>
+            <p>This is the official Kats trailer, edited by S3cretVR (Site Owner) and recorded by Trend (Owner).</p>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <div class="image-box">
+            <img src="https://scontent-dfw5-1.oculuscdn.com/v/t64.5771-25/491830593_1393545132462643_4100289664480068116_n.webp?stp=dst-webp_s2048x2048&_nc_cat=110&ccb=1-7&_nc_sid=6e7a0a&_nc_ohc=OeiL8HxxOFUQ7kNvwGxsg3f&_nc_oc=AdkfvV9IGlbwMh-BpnVBEmu4RwCW6YXISmD4jMr8YAI07T-T7uIbZ7nxrCfqKDDj5so&_nc_zt=3&_nc_ht=scontent-dfw5-1.oculuscdn.com&_nc_ss=8&oh=00_AfwAdgpfe4sATwfdZisdIYRAwA1yCfRYxq9zyRp8pqb4HA&oe=69BCE9B9" 
+                 alt="Kats Experience" class="side-img">
+        </div>
+
+        <div class="video-text">
+            <h2>Experience Kats in VR</h2>
+            <p>Step into the world of Kats. Click the button below to view the full experience on the Meta Store.</p>
+            
+            <a href="https://www.meta.com/en-gb/experiences/kats/24660034833689139/" class="meta-button" target="_blank">
+                View on Meta Store
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
